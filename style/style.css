@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1219px;
+  padding: 0 55px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* шапка начало  */
+.header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: #007765;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding-top: 20px;
+}
+
+.header__menu-item {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-top: 29px;
+  padding-bottom: 26px;
+}
+
+.header__menu-link {
+  color: #fff;
+}
+
+/* шапка конец */
+
+/* первая страница (jumbotron) начало */
+.jumbotron {
+  background: url("../images/jumbotron/bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 160px 0;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 72px;
+  color: #fff;
+  text-align: center;
+}
+
+/* первая страница (jumbotron) конец */
+
+/* problem начало */
+.problem {
+  background-color: #eee;
+}
+
+.title {
+  padding-top: 48px;
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #007765;
+  text-align: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 38px;
+}
+
+.text__bold-text {
+  font-weight: 700;
+}
+
+.problem .text:last-child {
+  padding-bottom: 92px;
+  margin-bottom: 0;
+}
+
+/* problem конец */
+
+/* hero начало */
+.hero {
+  background: url(../images/hero/bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 128px 0;
+}
+
+.text__italic-text {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  padding: 128px 108px;
+  color: #fff;
+}
+
+/* hero конец */
+/* ppc начало */
+.ppc {
+  background-color: #fff;
+}
+
+.ppc__inner {
+  position: relative;
+}
+
+.ppc__inner::before {
+  content: " ";
+  height: 115px;
+  width: 115px;
+  position: absolute;
+  top: 139px;
+  left: 0;
+  background-image: url(../images/ppc-logo.png);
+}
+
+.ppc-logo {
+  padding-left: 163px;
+}
+
+.text__italic {
+  font-style: italic;
+}
+
+/* ppc конец */
+
+/* team начало */
+.team {
+  background-color: #eee;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 56px;
+}
+
+.team__item {
+  width: 350px;
+  margin-right: 30px;
+  margin-bottom: 82px;
+}
+
+/* .team__item:nth-child(3n+3) {
+  margin-right: 0;
+} */
+
+.team__foto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__name {
+  font-size: 24px;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 700;
+  color: #007765;
+  margin-top: 12px;
+}
+
+.team__profession {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* team конец*/
+/* footer начало */
+.footer {
+  background-color: #333;
+}
+
+.footer__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  width: 540px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+}
+
+/* footer конец */
